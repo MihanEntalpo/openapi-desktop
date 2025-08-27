@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron .",
     "build:win": "electron-builder --win --config.directories.output=dist/windows",
-    "build:linux": "electron-builder --linux --config.directories.output=dist/linux",
+    "build:linux": "electron-builder --linux AppImage --config.directories.output=dist/linux && electron-builder --linux snap --config.directories.output=dist/linux",
     "build:mac": "electron-builder --mac --config.directories.output=dist/macos",
     "test": "echo 'No tests'"
   },
