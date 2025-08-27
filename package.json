@@ -1,7 +1,7 @@
 {
   "name": "openapi-desktop",
   "version": "1.0.0",
-  "description": "Desktop Electron app with Swagger UI",
+  "description": "Desktop Electron app with Swagger Editor",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -15,7 +15,7 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "swagger-ui-dist": "^5.27.1"
+    "swagger-editor-dist": "^4.14.6"
   },
   "devDependencies": {
     "electron": "^37.3.1",
