@@ -19,6 +19,18 @@ npm install
 npm start
 ```
 
+To open a specific OpenAPI file, pass the path after `--`:
+
+```bash
+npm start -- path/to/spec.yaml
+```
+
+Packaged binaries also accept a file path as the first argument:
+
+```bash
+openapi-desktop path/to/spec.yaml
+```
+
 ## Build distributables
 
 The project uses [electron-builder](https://www.electron.build/) to package binaries for different platforms.
