@@ -1,0 +1,27 @@
+{
+  "name": "openapi-desktop",
+  "version": "1.0.0",
+  "description": "Desktop Electron app with Swagger UI",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win",
+    "build:linux": "electron-builder --linux",
+    "build:mac": "electron-builder --mac",
+    "test": "echo 'No tests'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "swagger-ui-dist": "^5.27.1"
+  },
+  "devDependencies": {
+    "electron": "^37.3.1",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.example.openapi"
+  }
+}
