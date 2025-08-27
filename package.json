@@ -22,6 +22,7 @@
     "electron-builder": "^26.0.12"
   },
   "build": {
-    "appId": "com.example.openapi"
+    "appId": "com.example.openapi",
+    "icon": "favicon.png"
   }
 }
