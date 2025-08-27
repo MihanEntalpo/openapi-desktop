@@ -3,7 +3,8 @@
 This is a minimal Electron application that bundles [Swagger UI](https://github.com/swagger-api/swagger-ui) to view OpenAPI specifications.
 
 ## Prerequisites
-- [Node.js](https://nodejs.org/) 18+
+- [Node.js](https://nodejs.org/) 18+ (for local builds)
+- [Docker](https://www.docker.com/) for containerized builds
 
 ## Install
 ```bash
@@ -33,3 +34,27 @@ The project uses [electron-builder](https://www.electron.build/) to package bina
 
 ## Testing
 No automated tests are included yet.
+
+## Build with Docker
+If you prefer not to install Node.js locally, you can build the app inside Docker.
+
+First build the image:
+```bash
+make docker-build
+```
+
+Then build for your platform:
+- **Linux**:
+  ```bash
+  make build-linux
+  ```
+- **Windows**:
+  ```bash
+  make build-windows
+  ```
+- **macOS**:
+  ```bash
+  make build-macos
+  ```
+
+The resulting files will appear under `dist/linux`, `dist/windows` and `dist/macos` respectively.
